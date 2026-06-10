@@ -1,0 +1,109 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body{
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+}
+header{
+    background: darkblue;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: red;
+    }
+.hero{
+    height: 80vh;
+    background-image:linear-gradient(
+        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.5)
+    ), url(img001.jpg) ;
+    
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    background: darkblue;
+    padding: 9px 15px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.btn:hover{
+    background: crimson;
+}
+.section{
+    padding: 60px 20px;
+    text-align: center;
+}
+.section h2{
+    margin-bottom: 20px;
+    color: crimson;
+}
+.light{
+    background: darkblue;
+}
+.card{
+    color: midnightblue;
+}
+footer{
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero h2{
+        font-size: 2rem;
+    }
+    .card{
+        width: 90%;
+    }
+}
+

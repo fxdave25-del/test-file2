@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background: darkblue;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: red;
+    }
+    footer{
+        background: darkblue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 0;
+        
+    }
+    .hero{
+        height: 80vh;
+        background-image:linear-gradient(
+            rgba(0,0,0,0.5)
+            rgba(0,0,0,0.5)
+        ), url(img001.jpg) ;
+        
+        background-size: cover;
+        background-position: center;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        
+    }

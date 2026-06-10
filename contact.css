@@ -1,0 +1,163 @@
+
+
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: red;
+    }
+.contact-section{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-section h2{
+    color: navy;
+    margin-bottom: 30px;
+}
+
+.contact-card{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-card h3{
+    color: navy;
+    margin-bottom: 10px;
+}
+
+.contact-card ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-card li{
+    padding: 5px;
+}
+
+footer{
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/* NAVBAR */
+.navbar{
+    background: linear-gradient(90deg, #001f7a, #0044cc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* LOGO */
+.logo h1{
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo h1:hover{
+    transform: scale(1.05);
+}
+
+/* NAVIGATION LINKS */
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li{
+    position: relative;
+}
+
+/* BUTTON STYLE */
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover{
+    background: white;
+    color: #0033cc;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.4);
+}
+
+/* ANIMATED UNDERLINE */
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background: red;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after{
+    width: 80%;
+}
+
+/* ACTIVE PAGE EFFECT */
+.nav-links a.active{
+    background: red;
+    color: #001f7a;
+    box-shadow: 0 0 15px red;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .nav-links a{
+        display: block;
+    }
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    .hero h2{
+        font-size: 2rem;
+    }
+    .card{
+        width: 90%;
+    }
+}

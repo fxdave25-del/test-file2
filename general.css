@@ -7,36 +7,30 @@ body{
     font-family: arial, sans-serif;
     line-height: 1.6;
 }
-header{
-    background: darkblue;
-    color: white;
-    padding: 15px 30px;
+
+.logo{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 10px;
 }
-nav ul{
-    display: flex;
-    list-style: none;
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
-nav ul li{
-    margin-left: 20px;
+
+.logo h1{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
 }
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    nav ul li a:hover{
-        color: red;
-    }
 .hero{
     height: 80vh;
     background-image:linear-gradient(
         rgba(0,0,0,0.5)
         rgba(0,0,0,0.5)
-    ), url(img001.jpg) ;
+    ), url(school.jpg) ;
     
     background-size: cover;
     background-position: center;
@@ -92,13 +86,6 @@ footer{
     header{
         flex-direction: column;
     }
-    nav ul{
-        flex-direction: column;
-        margin-top: 15px;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
     .hero h2{
         font-size: 2rem;
     }
@@ -106,4 +93,129 @@ footer{
         width: 90%;
     }
 }
+.navbar{
+    background: linear-gradient(90deg, #001f7a, #0044cc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
 
+
+.school-card{
+    position: relative;
+    width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.school-card img{
+    width: 100%;
+    display: flex;
+    opacity: 0.5; 
+    transition: 0.5s;
+}
+
+.school-card:hover img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+.overlay h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.overlay p{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 8px black;
+}
+
+
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li{
+    position: relative;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+.nav-links a:hover{
+    background: white;
+    color: #0033cc;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.4);
+}
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background: red;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after{
+    width: 80%;
+}
+
+
+.nav-links a.active{
+    background: red;
+    color: #001f7a;
+    box-shadow: 0 0 15px red;
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .nav-links a{
+        display: block;
+    }
+}

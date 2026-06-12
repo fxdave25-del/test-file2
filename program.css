@@ -6,12 +6,12 @@ body {
 }
 section {
   padding: 50px;
-  min-height: 100vh; /* ensures scrolling space */
+  min-height: 100vh; 
 }
 video {
   display: block;
   margin: 20px auto;
-  max-width: 80%;
+  max-width: 100%;
   border: 3px solid #004080;
   border-radius: 10px;
 }
@@ -90,4 +90,10 @@ video {
     color: white;
     font-size: 1.5rem;
     margin: 0;
+}
+footer{
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }

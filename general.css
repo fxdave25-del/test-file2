@@ -71,13 +71,13 @@ body{
     color: crimson;
 }
 .light{
-    background: darkblue;
+    background: linear-gradient(90deg, #001f7a, #0044cc);
 }
 .card{
-    color: midnightblue;
+    color: linear-gradient(90deg, #001f7a, #0044cc);
 }
 footer{
-    background: darkblue;
+    background: linear-gradient(90deg, #001f7a, #0044cc);
     color: white;
     text-align: center;
     padding: 20px;

@@ -48,7 +48,7 @@ footer{
     padding: 15px;
     margin-top: 30px;
 }
-/* NAVBAR */
+
 .navbar{
     background: linear-gradient(90deg, #001f7a, #0044cc);
     display: flex;
@@ -61,7 +61,7 @@ footer{
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* LOGO */
+
 .logo h1{
     color: white;
     font-size: 1.8rem;
@@ -74,7 +74,7 @@ footer{
     transform: scale(1.05);
 }
 
-/* NAVIGATION LINKS */
+
 .nav-links{
     display: flex;
     list-style: none;
@@ -85,7 +85,7 @@ footer{
     position: relative;
 }
 
-/* BUTTON STYLE */
+
 .nav-links a{
     text-decoration: none;
     color: white;
@@ -98,7 +98,7 @@ footer{
     overflow: hidden;
 }
 
-/* HOVER EFFECT */
+
 .nav-links a:hover{
     background: white;
     color: #0033cc;
@@ -106,7 +106,7 @@ footer{
     box-shadow: 0 8px 20px rgba(255,255,255,0.4);
 }
 
-/* ANIMATED UNDERLINE */
+
 .nav-links a::after{
     content: "";
     position: absolute;
@@ -123,14 +123,14 @@ footer{
     width: 80%;
 }
 
-/* ACTIVE PAGE EFFECT */
+
 .nav-links a.active{
     background: red;
     color: #001f7a;
     box-shadow: 0 0 15px red;
 }
 
-/* MOBILE RESPONSIVE */
+
 @media(max-width:768px){
 
     .navbar{
@@ -160,4 +160,14 @@ footer{
     .card{
         width: 90%;
     }
+}
+footer{
+    background: linear-gradient(90deg, #001f7a, #0044cc);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+b{
+    text-align: center;
+    align-items: center;
 }

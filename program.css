@@ -97,3 +97,28 @@ footer{
     text-align: center;
     padding: 20px;
 }
+@media (max-width: 768px) {
+    section {
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .logo h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
